@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-[#F9F7F3] w-full h-28  mb-10 sticky top-0   ">
+       
+        <section class="navbar-section container mx-auto mb-20 ">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    
+                  <a class="btn text-xl bg-[#B4F461]" id="home-btn">Home</a>
+                </div>
+                <div class="navbar-center space-x-4  lg:flex">
+                    <img src="assets/logo.png" alt="">
+                      <h3 class="text-xl font-semibold">Donation Bangladesh</h3>
+                  </div>    
+                <div class="navbar-end  ">
+                    <div class="flex  btn bg-[#f3f3f3]">
+                      <img src="assets/coin.png" alt="">
+                    <p  id="balance" class="text-xl ">5000</p>
+                    </div>
+                    
+                  </div>
+              </div>
+        </section>
+        </header>
+        <main class="container mx-auto">
+            <h1 class="text-4xl lg:text-5xl font-semibold">Important FAQ</h1>
+            <div class="space-y-7 mt-10">
+                <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a way for web browsers to organize HTML as a tree of elements. It lets JavaScript change or update the content, structure, and style of a webpage. For example, you can use the DOM to change text, hide elements, or add new content to a page dynamically.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+                <div class="collapse-content">
+                  <p>In JavaScript, selecting an element from the DOM refers to the process of retrieving a specific HTML element from the document using methods like `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, and `querySelectorAll`. This allows you to interact with and manipulate the selected element(s) programmatically.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>**Event delegation** is a technique in JavaScript where a single event listener is attached to a parent element to manage events for multiple child elements. It leverages event bubbling to handle events efficiently, improving performance, simplifying code, and automatically managing events for dynamically added elements.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you maniplate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>You can manipulate an element's attributes using `setAttribute`, `getAttribute`, and `removeAttribute`, and change its styles using `element.style.propertyName`.</p>
+                </div>
+              </div>
+            </div>
+            
+        </main>
+        <script>
+            
+            document.getElementById('home-btn').addEventListener('click', function(){
+                window.location.href = "./home.html"
+            })
+        </script>
+        
+</body>
+</html>
